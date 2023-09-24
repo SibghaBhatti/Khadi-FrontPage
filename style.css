@@ -1,0 +1,327 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  display: box;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+  font-size: 12px;
+  background-color: rgb(242, 240, 240);
+}
+.header a {
+  text-decoration: underline;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: sticky;
+
+  top: 0;
+  background-color: white;
+  width: 100%;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  justify-content: center;
+  font-size: small;
+  font-weight: 200px;
+  border-bottom: 1px;
+  color: black;
+}
+.navlinks > ul li a {
+  padding: 15px;
+}
+.navlinks {
+  margin-left: 90px;
+}
+
+.navlinks li .dropdown {
+  position: absolute;
+  top: 78%;
+  left: 14%;
+  background-color: white;
+  box-shadow: 1px 1px 15px #000000;
+  width: 67%;
+  visibility: hidden;
+}
+.navlinks .sale .dropdown {
+  width: 67%;
+}
+.navlinks .newin .dropdown {
+  width: 52%;
+  left: 21%;
+}
+.navlinks .readytowear .dropdown {
+  width: 67%;
+  left: 14%;
+}
+.navlinks .western .dropdown {
+  width: 82%;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+.navlinks .western .dropdown .content h6 {
+  text-align: left;
+}
+
+.navlinks ul li:hover > .dropdown {
+  visibility: visible;
+}
+.dropdown .dropdown {
+  top: 0;
+  left: 101%;
+}
+.dropdown {
+  padding: 10px;
+  display: grid;
+  gap: 9;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.dropdownproducts {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+}
+.dropdown .image {
+  width: 200px;
+  margin-bottom: 10px;
+}
+.dropdown .content {
+  text-align: center;
+  font-size: 20px;
+  color: black;
+  margin-bottom: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.dropdown .content ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 2px;
+  justify-content: left;
+}
+.dropdown .content h6 {
+  text-align: center;
+}
+
+.navbar .navicons img {
+  margin-right: 2px;
+}
+sup {
+  color: red;
+}
+
+.navicons img {
+  width: 100%;
+  height: 15px;
+}
+
+.navicons li {
+  font-size: smaller;
+  cursor: pointer;
+}
+.firstgrid img {
+  width: 100%;
+  height: 90vh;
+}
+.secondgrid {
+  /*container ko lgana hai grid */
+  margin: 2px;
+  display: grid;
+  grid-template-columns: repeat(4, 24%);
+  gap: 9px;
+  align-items: center;
+}
+.grid {
+  /*container ko lgana hai grid */
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.grid .bigimg {
+  width: 640px;
+  height: 90vh;
+}
+.grid .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+.grid .right .cards {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  margin-left: 90px;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 420px;
+}
+.sections .cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0px;
+}
+
+.grid {
+  display: flex;
+}
+.grid #opposite {
+  margin-left: 95px;
+}
+.bigimg img {
+  width: 100%;
+}
+.cards {
+  display: flex;
+  gap: 10px;
+}
+.product button {
+  width: 210px;
+  height: 30px;
+  border-style: none;
+}
+.content h3 {
+  color: rgb(89, 89, 89);
+}
+
+.content {
+  margin-top: 9px;
+  font-size: small;
+  color: grey;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 15px 20px 15px;
+  background-color: rgb(241, 241, 241);
+  font-size: small;
+  width: 100%;
+}
+.navitems {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 9px;
+  width: 300px;
+  height: 20px;
+}
+.navitems img {
+  width: 35px;
+  height: 35px;
+}
+.navitems h3 {
+  font-weight: lighter;
+  font-size: small;
+  letter-spacing: 1px;
+}
+.navitems p {
+  font-size: 12px;
+  color: grey;
+}
+.end {
+  margin-top: 20px;
+}
+.end p {
+  font-size: small;
+  line-height: 30px;
+}
+.secondlast p {
+  color: grey;
+  line-height: 30px;
+}
+.secondlast {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.secondlast input {
+  height: 9vh;
+  width: 370px;
+  padding-left: 20px;
+}
+.secondlast button {
+  height: 9vh;
+  width: 120px;
+  margin-left: 0px;
+  background-color: black;
+  color: white;
+}
+
+.three ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 9px;
+  justify-content: space-between;
+}
+.three li img {
+  height: 35px;
+  width: 40px;
+}
+.last {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  margin-top: 20px;
+  justify-content: space-around;
+  margin-left: 50px;
+}
+.credits {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 30px 20px 30px;
+  color: grey;
+}
+.credits .cashcards {
+  width: 200px;
+  height: 100px;
+}
+.credits .securitycheck {
+  width: 160px;
+  height: 100px;
+}
+.credits .logo {
+  width: 50px;
+  height: 20px;
+  align-items: center;
+}
+.credits .copyrights {
+  width: 330px;
+  height: 100px;
+  justify-content: flex-end;
+}
+.last p {
+  color: grey;
+}
